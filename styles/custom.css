@@ -1,0 +1,87 @@
+.max-w-nav {
+  max-width: 270px;
+}
+.min-w-nav {
+  min-width: 270px;
+}
+.min-h-nav {
+  min-height: 600px;
+}
+.w-nav {
+  width: 270px;
+}
+.-right {
+  top: -10px;
+  right: -190px;
+}
+.min-w-menu {
+  min-width: 190px;
+}
+.contact {
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+  overflow: hidden;
+}
+.contact-open {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
+.topbar {
+  max-height: 0px;
+  transition: max-height 0.25s ease-out;
+  overflow: hidden;
+}
+.topbar-open {
+  max-height: 100vh;
+  transition: max-height 0.5s ease-in;
+}
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1947&q=80");
+}
+.hero-text {
+  background-color: rgba(37, 37, 41, 0.267);
+}
+
+.typewriter {
+  position: relative;
+  top: 50%;
+  width: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 1s steps(44) infinite normal;
+}
+
+/* The typing effect */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: auto;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(41, 91, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#svg {
+  stroke-dasharray: 278;
+  stroke-dashoffset: 278;
+  animation: sign 5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
