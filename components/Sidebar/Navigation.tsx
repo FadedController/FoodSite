@@ -60,6 +60,9 @@ const Navigation = (): JSX.Element => {
           </ul>
         </li>
         <li className="transition px-8 w-nav cursor-pointer  hover:opacity-85 ">
+          <p className="text-blue-900 hover:text-blue-800">Spices</p>
+        </li>
+        <li className="transition px-8 w-nav cursor-pointer  hover:opacity-85 ">
           <p className="text-blue-900 hover:text-blue-800">Contact Us</p>
         </li>
       </ul>

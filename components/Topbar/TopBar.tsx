@@ -7,7 +7,7 @@ const TopBar = (): JSX.Element => {
 
   return (
     <>
-      <div className="md:hidden flex flex-col shadow-xl bg-gray-50 sticky top-0">
+      <div className="md:hidden flex flex-col shadow-xl bg-gray-50 sticky top-0 z-10">
         <div className="flex items-center">
           <div className="flex-1 flex flex-col font-bold text-3xl p-4">
             <h1 className="text-yellow-500">Your</h1>

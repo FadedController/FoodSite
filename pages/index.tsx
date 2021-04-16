@@ -2,8 +2,10 @@ import SideBar from "../components/Sidebar/SideBar";
 import Head from "next/head";
 import TopBar from "../components/Topbar/TopBar";
 import Main from "../components/Main/Main";
+import Footer from "../components/Footer/Footer";
+import Telegram from "../components/Contact/Telegram";
 
-const IndexPage = () => {
+const IndexPage = (): JSX.Element => {
   return (
     <>
       <Head>
@@ -18,6 +20,8 @@ const IndexPage = () => {
         <div className="flex flex-1 min-h-full flex-col">
           <TopBar />
           <Main />
+          <Footer />
+          <Telegram />
         </div>
         {/*Content ends here */}
       </div>
