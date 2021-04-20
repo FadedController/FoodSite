@@ -14,6 +14,7 @@ const IndexPage = (): JSX.Element => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <title>Saching Trading - Home</title>
       </Head>
       <div className="flex">
         <SideBar />
@@ -21,7 +22,6 @@ const IndexPage = (): JSX.Element => {
         <div className="flex flex-1 min-h-full flex-col">
           <TopBar />
           <Main />
-          <Contact />
           <Footer />
           <Telegram />
         </div>

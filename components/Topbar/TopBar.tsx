@@ -10,8 +10,10 @@ const TopBar = (): JSX.Element => {
       <div className="md:hidden flex flex-col shadow-xl bg-gray-50 sticky top-0 z-10">
         <div className="flex items-center">
           <div className="flex-1 flex flex-col font-bold text-3xl p-4">
-            <h1 className="text-yellow-500">Your</h1>
-            <h1 className="text-blue-900">Brand</h1>
+            <a href="#">
+              <h1 className="text-yellow-500">Your</h1>
+              <h1 className="text-blue-900">Brand</h1>
+            </a>
           </div>
           <div
             className={`transition mr-2 ${
@@ -105,7 +107,9 @@ const TopBar = (): JSX.Element => {
               </ul>
             </li>
             <li className="flex px-5 cursor-pointer">
-              <p>Contact Us</p>
+              <a onClick={() => setState(false)} href="#contact">
+                Contact Us
+              </a>
             </li>
           </ul>
         </nav>

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const NavContact = (): JSX.Element => {
   const [open, setOpen] = useState(true);
+  // A-03, Vasant-Lila society, Mahajan Wadi, Mira-Gavthan, Thane-401107, Maharashtra, India
 
   return (
     <div className="flex flex-col items-center justify-center space-y-4 text-yellow-500 text-xl font-bold">
@@ -22,12 +23,13 @@ const NavContact = (): JSX.Element => {
       </div>
       <div className={`contact ${open ? "contact-open" : ""}`}>
         <ul className="flex flex-col items-center justify-center space-y-2 text-base font-normal">
-          <li>Monterrey</li>
-          <li>International Mexico</li>
-          <li>305 L. Cárdenas Blvd</li>
-          <li>01 (800) 2458-989 </li>
-          <li className="pb-4 pt-1 text-gray-500 underline">
-            salesflorida@fancyfoods.com
+          <li>Maharashtra, India </li>
+          <li className="char-w text-center">
+            A-03, Vasant-Lila society, Mahajan Wadi, Mira-Gavthan, Thane-401107
+          </li>
+          <li>+91-9930249626</li>
+          <li className="pb-4 pt-1 text-gray-500 text-sm underline">
+            enquiry@sachintradingcompany.com
           </li>
         </ul>
       </div>

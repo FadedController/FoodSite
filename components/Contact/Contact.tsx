@@ -33,19 +33,22 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center" id="contact">
+    <div className="flex items-center justify-center w-full contact-bg">
       <form
-        className="flex p-4 md:p-10 space-y-5 flex-col bg-white max-w-4xl rounded-xl w-full mx-5 my-6 shadow-xl"
+        id="contact"
+        className="flex p-6 pt-8 md:p-10 space-y-5 flex-col bg-white max-w-4xl rounded-xl w-full mx-5 my-16 shadow-xl contact-padding md:p-scroll-0"
         onSubmit={onSubmit}
         onReset={onReset}
       >
-        <h2 className="text-blue-900 ml-1 text-4xl font-semibold">
-          Contact Us
-        </h2>
+        <h2 className="text-blue-900  text-4xl font-semibold">Contact Us</h2>
+        <p className="text-lg">
+          Feel free to connect with us for further information about our
+          services.
+        </p>
         <div className="flex flex-1 flex-col justify-center space-y-2">
           <h3 className="text-xl font-semibold ml-1">Name</h3>
           <input
-            className="shadow-inner px-5 bg-gray-50 rounded-full h-10"
+            className="shadow-inner px-5 bg-gray-50 rounded-2xl h-12"
             name="name"
             id="name"
             type="text"
@@ -61,7 +64,7 @@ const ContactForm = () => {
               name="email"
               id="email"
               type="email"
-              className="shadow-inner px-5 bg-gray-50 rounded-full h-10"
+              className="shadow-inner px-5 bg-gray-50 rounded-2xl h-12"
               required
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -73,7 +76,7 @@ const ContactForm = () => {
               name="phone-number"
               id="phone-number"
               type="text"
-              className="shadow-inner px-5 bg-gray-50 rounded-full h-10"
+              className="shadow-inner px-5 bg-gray-50 rounded-2xl h-12"
               value={form.phoneNumber}
               onChange={(e) =>
                 setForm({ ...form, phoneNumber: e.target.value })

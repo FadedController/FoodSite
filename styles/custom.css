@@ -1,6 +1,15 @@
 html {
   scroll-behavior: smooth;
 }
+.char-w {
+  max-width: 20ch;
+}
+.contact-padding {
+  scroll-padding: 600px 0 0 0;
+}
+.p-scroll-0 {
+  scroll-padding: 0;
+}
 .max-w-nav {
   max-width: 270px;
 }
@@ -46,6 +55,10 @@ html {
   background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1503810473512-f64b56827964?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=1800");
 }
+.contact-bg {
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80");
+}
 .hero-text {
   background-color: rgba(37, 37, 41, 0.267);
 }
@@ -59,8 +72,8 @@ html {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-    blinkTextCursor 1s steps(44) infinite normal;
+  animation: typewriter 2s steps(8) 1s 1 normal both,
+    blinkTextCursor 2s steps(8) infinite normal;
 }
 
 /*The scrollbar*/
@@ -150,12 +163,18 @@ html {
     width: 0;
   }
   to {
-    width: auto;
+    width: 8ch;
   }
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(41, 91, 255, 0.75);
+    border-right-color: #fbbf24;
+  }
+  25% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #fbbf24;
   }
   to {
     border-right-color: transparent;

@@ -33,16 +33,16 @@ const Telegram = (): JSX.Element => {
                 className="h-14 rounded-full shadow-xl"
                 src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
               />
-              <img
+              {/*               <img
                 className="h-14 rounded-full shadow-xl"
                 src="https://images.unsplash.com/photo-1571139317672-93369256842c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-              />
+              /> */}
             </div>
           </div>
           <p className="font-semibold flex justify-center pb-4 px-2">
             If you need help, please click here to chat
           </p>
-          <div className="flex bg-gray-50 px-4 py-5">
+          <div className="flex cursor-pointer md:rounded-b-md bg-gray-50 hover:bg-gray-200 px-4 py-5">
             <img
               src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
               className="h-14 rounded-full shadow-xl"
@@ -56,7 +56,7 @@ const Telegram = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="flex bg-gray-50 md:rounded-b-md px-4 py-5">
+          {/* <div className="flex bg-gray-50 md:rounded-b-md px-4 py-5">
             <img
               className="h-14 rounded-full shadow-xl"
               src="https://images.unsplash.com/photo-1571139317672-93369256842c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
@@ -69,7 +69,7 @@ const Telegram = (): JSX.Element => {
                 <div className="ml-1 mt-1 h-2 w-2 bg-yellow-500 rounded-full"></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
