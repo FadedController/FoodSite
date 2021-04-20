@@ -12,8 +12,8 @@ const Cards = (): JSX.Element => {
           Qui, quasi.
         </p>
       </div>
-      <div className="flex lg:flex-row flex-col lg:space-x-4 my-10 w-full">
-        <div className="telegram-in relative mt-8 lg:flex-1 flex lg:justify-end justify-center">
+      <div className="flex lg:flex-row flex-col lg:space-x-4 mb-10 w-full">
+        <div className=" mt-8 lg:flex-1 flex lg:justify-end justify-center">
           <div className="flex flex-col max-w-md rounded-lg space-y-4 bg-gray-50 shadow-lg m-6">
             <img
               className="rounded-t-lg h-80"
@@ -27,13 +27,13 @@ const Cards = (): JSX.Element => {
               architecto!
             </p>
             <div className="flex justify-center pb-6">
-              <button className="text-black text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md opacity-90">
+              <button className="text-black z-0 text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md opacity-90">
                 Learn more
               </button>
             </div>
           </div>
         </div>
-        <div className="telegram-in relative mt-8 lg:flex-1 flex lg:justify-start justify-center">
+        <div className=" mt-8 lg:flex-1 flex lg:justify-start justify-center">
           <div className="flex flex-col max-w-md rounded-lg space-y-4 bg-gray-50 shadow-lg m-6">
             <img
               className="rounded-t-lg h-80"

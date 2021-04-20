@@ -6,12 +6,18 @@ const Hero = (): JSX.Element => {
           Lorem Ipsum
         </h1>
         <div className="flex justify-center space-x-8 opacity-90">
-          <button className="text-black text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md">
+          <a
+            href="#"
+            className="text-black text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md"
+          >
             Click Me
-          </button>
-          <button className="text-gray-50 text-xl font-semibold shadow-lg bg-blue-900 hover:bg-blue-800 px-4 py-2 rounded-md">
+          </a>
+          <a
+            href="#"
+            className="text-gray-50 text-xl font-semibold shadow-lg bg-blue-900 hover:bg-blue-800 px-4 py-2 rounded-md"
+          >
             Click Me
-          </button>
+          </a>
         </div>
       </div>
     </div>

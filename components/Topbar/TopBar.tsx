@@ -55,8 +55,18 @@ const TopBar = (): JSX.Element => {
                   apparelsState ? "topbar-open text-2xl" : ""
                 }`}
               >
-                <li className="px-5 py-1 font-normal">Legenga</li>
-                <li className="px-5 py-1 font-normal">Sari</li>
+                <li
+                  onClick={() => console.log("lehenga")}
+                  className="px-5 py-1 font-normal"
+                >
+                  Legenga
+                </li>
+                <li
+                  onClick={() => console.log("sari")}
+                  className="px-5 py-1 font-normal"
+                >
+                  Sari
+                </li>
               </ul>
             </li>
             <li
@@ -80,8 +90,18 @@ const TopBar = (): JSX.Element => {
                   organicState ? "topbar-open text-2xl" : ""
                 }`}
               >
-                <li className="px-5 py-1 font-normal">Oil</li>
-                <li className="px-5 py-1 font-normal">Sauce</li>
+                <li
+                  onClick={() => console.log("oil")}
+                  className="px-5 py-1 font-normal"
+                >
+                  Oil
+                </li>
+                <li
+                  onClick={() => console.log("sauce")}
+                  className="px-5 py-1 font-normal"
+                >
+                  Sauce
+                </li>
               </ul>
             </li>
             <li className="flex px-5 cursor-pointer">

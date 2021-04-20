@@ -1,0 +1,16 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Contact Form",
+      "fields": {
+        "name": { "type": "text", "required": true },
+        "email": { "type": "email", "required": true }, 
+        "message": { "type": "text", "required": true }, 
+        "phone-number": { "type": "email", "required": false } 
+      },
+      "actions": [
+        { "type": "email", "to": "adpadillar25@gmail.com" }
+      ]
+    }
+  }
+}

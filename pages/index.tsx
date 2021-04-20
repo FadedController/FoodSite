@@ -4,6 +4,7 @@ import TopBar from "../components/Topbar/TopBar";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
 import Telegram from "../components/Contact/Telegram";
+import Contact from "../components/Contact/Contact";
 
 const IndexPage = (): JSX.Element => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = (): JSX.Element => {
         <div className="flex flex-1 min-h-full flex-col">
           <TopBar />
           <Main />
+          <Contact />
           <Footer />
           <Telegram />
         </div>
