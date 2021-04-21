@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Telegram = (): JSX.Element => {
+const Telegram = (props: { imagePath: string }): JSX.Element => {
   const [state, setState] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ const Telegram = (): JSX.Element => {
       >
         <h1 className=" px-4 text-gray-50 flex-1">We can help you</h1>
         <div className="bg-blue-400 px-2 py-1 md:rounded-tr-lg">
-          <img className="h-10 w-10 p-1" src="img/telegram.png" />
+          <img className="h-10 w-10 p-1" src={props.imagePath} />
         </div>
       </div>
       {/*Card popup */}

@@ -4,9 +4,13 @@ import TopBar from "../components/Topbar/TopBar";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
 import Telegram from "../components/Contact/Telegram";
-import Contact from "../components/Contact/Contact";
+import { homePageData } from "../data/data";
+import { homePageDataType } from "../data/dataInterface";
+import { GetStaticProps } from "next";
 
-const IndexPage = (): JSX.Element => {
+const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
+  const { links } = props.data;
+
   return (
     <>
       <Head>
@@ -17,18 +21,24 @@ const IndexPage = (): JSX.Element => {
         <title>Saching Trading - Home</title>
       </Head>
       <div className="flex">
-        <SideBar />
+        <SideBar links={links} />
         {/*Content goes here*/}
         <div className="flex flex-1 min-h-full flex-col">
-          <TopBar />
+          <TopBar links={links} />
           <Main />
           <Footer />
-          <Telegram />
+          <Telegram imagePath="img/telegram.png" />
         </div>
         {/*Content ends here */}
       </div>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: { data: homePageData },
+  };
 };
 
 export default IndexPage;

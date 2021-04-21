@@ -1,16 +1,37 @@
 import { useState } from "react";
 
-const TopBar = (): JSX.Element => {
+const TopBar = (props: {
+  links: {
+    logo: string;
+    home: string;
+    lehenga: string;
+    sari: string;
+    oil: string;
+    juice: string;
+    spices: string;
+    contactUs: string;
+  };
+}): JSX.Element => {
   const [state, setState] = useState(false);
   const [organicState, setOrganicState] = useState(false);
   const [apparelsState, setApparelsState] = useState(false);
+  const {
+    contactUs,
+    home,
+    juice,
+    lehenga,
+    logo,
+    oil,
+    sari,
+    spices,
+  } = props.links;
 
   return (
     <>
       <div className="md:hidden flex flex-col shadow-xl bg-gray-50 sticky top-0 z-10">
         <div className="flex items-center">
           <div className="flex-1 flex flex-col font-bold text-3xl p-4">
-            <a href="#">
+            <a href={logo}>
               <h1 className="text-yellow-500">Your</h1>
               <h1 className="text-blue-900">Brand</h1>
             </a>
@@ -34,7 +55,9 @@ const TopBar = (): JSX.Element => {
         >
           <ul className="flex flex-col space-y-3 mt-2 mb-6 ">
             <li className="px-5 flex cursor-pointer">
-              <p className="text-gray-600">Home</p>
+              <a href={home} className="text-gray-600">
+                Home
+              </a>
             </li>
             <li
               className="flex flex-col px-5 cursor-pointer"
@@ -57,17 +80,11 @@ const TopBar = (): JSX.Element => {
                   apparelsState ? "topbar-open text-2xl" : ""
                 }`}
               >
-                <li
-                  onClick={() => console.log("lehenga")}
-                  className="px-5 py-1 font-normal"
-                >
-                  Legenga
+                <li className="px-5 py-1 font-normal">
+                  <a href={lehenga}>Lehenga</a>
                 </li>
-                <li
-                  onClick={() => console.log("sari")}
-                  className="px-5 py-1 font-normal"
-                >
-                  Sari
+                <li className="px-5 py-1 font-normal">
+                  <a href={sari}>Sari</a>
                 </li>
               </ul>
             </li>
@@ -92,22 +109,19 @@ const TopBar = (): JSX.Element => {
                   organicState ? "topbar-open text-2xl" : ""
                 }`}
               >
-                <li
-                  onClick={() => console.log("oil")}
-                  className="px-5 py-1 font-normal"
-                >
-                  Oil
+                <li className="px-5 py-1 font-normal">
+                  <a href={oil}>Oil</a>
                 </li>
                 <li
                   onClick={() => console.log("sauce")}
                   className="px-5 py-1 font-normal"
                 >
-                  Sauce
+                  <a href={juice}>Juice</a>
                 </li>
               </ul>
             </li>
             <li className="flex px-5 cursor-pointer">
-              <a onClick={() => setState(false)} href="#contact">
+              <a onClick={() => setState(false)} href={contactUs}>
                 Contact Us
               </a>
             </li>

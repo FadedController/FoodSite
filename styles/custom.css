@@ -68,7 +68,6 @@ html {
   top: 50%;
   width: auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
