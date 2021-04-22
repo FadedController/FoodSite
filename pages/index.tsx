@@ -9,7 +9,7 @@ import { homePageDataType } from "../data/dataInterface";
 import { GetStaticProps } from "next";
 
 const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
-  const { links } = props.data;
+  const { nav } = props.data;
 
   return (
     <>
@@ -21,10 +21,10 @@ const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
         <title>Saching Trading - Home</title>
       </Head>
       <div className="flex">
-        <SideBar links={links} />
+        <SideBar nav={nav} />
         {/*Content goes here*/}
         <div className="flex flex-1 min-h-full flex-col">
-          <TopBar links={links} />
+          <TopBar nav={nav} />
           <Main />
           <Footer />
           <Telegram imagePath="img/telegram.png" />

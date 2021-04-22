@@ -4,27 +4,27 @@ interface Cards {
   description?: string;
 }
 
-interface Links {
-  logo: string;
-  home: string;
-  lehenga: string;
-  sari: string;
-  oil: string;
-  juice: string;
-  spices: string;
-  contactUs: string;
+interface Nav {
+  logoHref: string;
+  sections: {
+    sectionName: string;
+    href: string;
+    state: boolean;
+    links?: { linkName: string; href: string }[];
+  }[];
 }
 
 interface homePageDataType {
-  links: Links;
+  nav: Nav;
 }
 
 interface productPageDataType {
+  url: string;
   name: string;
   description: string;
   submenu: string;
-  links: Links;
+  nav: Nav;
   cards?: Cards[];
 }
 
-export type { productPageDataType, homePageDataType };
+export type { productPageDataType, homePageDataType, Nav };

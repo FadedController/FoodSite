@@ -1,106 +1,404 @@
 import { homePageDataType, productPageDataType } from "./dataInterface";
 
+const homePageData: homePageDataType = {
+  nav: {
+    logoHref: "#",
+    sections: [
+      { sectionName: "Home", href: "", state: false },
+      {
+        sectionName: "Agrocereals",
+        href: "",
+        state: false,
+        links: [
+          {
+            linkName: "Oil",
+            href: "/agrocereals/oil",
+          },
+          {
+            linkName: "Organic Product",
+            href: "/agrocereals/organic-product",
+          },
+          {
+            linkName: "Pulses",
+            href: "/agrocereals/pulses",
+          },
+          {
+            linkName: "Spices",
+            href: "/agrocereals/spices",
+          },
+        ],
+      },
+      {
+        sectionName: "Apparels",
+        href: "",
+        state: false,
+        links: [
+          {
+            linkName: "Lehenga",
+            href: "/apparels/lehenga",
+          },
+          {
+            linkName: "Saree",
+            href: "/apparels/saree",
+          },
+        ],
+      },
+      {
+        sectionName: "Contact Us",
+        href: "#contact",
+        state: false,
+      },
+    ],
+  },
+};
+
 const productsPagesData: { pages: productPageDataType[] } = {
   pages: [
     {
-      name: "Sari",
-      submenu: "Apparels",
-      links: {
-        home: "/",
-        logo: "#",
-        sari: "#",
-        contactUs: "#contact",
-        juice: "../products/juice",
-        lehenga: "../products/lehenga",
-        oil: "../products/oil",
-        spices: "../products/spices",
-      },
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      cards: [],
-    },
-    {
-      name: "Lehenga",
-      submenu: "Apparels",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      links: {
-        home: "/",
-        logo: "#",
-        sari: "../products/sari",
-        contactUs: "#contact",
-        juice: "../products/juice",
-        lehenga: "#",
-        oil: "../products/oil",
-        spices: "../products/spices",
-      },
-      cards: [],
-    },
-    {
       name: "Oil",
-      submenu: "Organic Food",
+      url: "oil",
+      submenu: "Agrocereals",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "#",
+              },
+              {
+                linkName: "Organic Product",
+                href: "../agrocereals/organic-product",
+              },
+              {
+                linkName: "Pulses",
+                href: "../agrocereals/pulses",
+              },
+              {
+                linkName: "Spices",
+                href: "../agrocereals/spices",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "../apparels/lehenga",
+              },
+              {
+                linkName: "Saree",
+                href: "../apparels/saree",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
+      },
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      links: {
-        home: "/",
-        logo: "#",
-        sari: "../products/sari",
-        contactUs: "#contact",
-        juice: "../products/juice",
-        lehenga: "../products/lehenga",
-        oil: "#",
-        spices: "../products/spices",
-      },
       cards: [],
     },
     {
-      name: "Juice",
-      submenu: "Organic Food",
+      name: "Organic Product",
+      url: "organic-product",
+      submenu: "Agrocereals",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "../agrocereals/oil",
+              },
+              {
+                linkName: "Organic Product",
+                href: "#",
+              },
+              {
+                linkName: "Pulses",
+                href: "../agrocereals/pulses",
+              },
+              {
+                linkName: "Spices",
+                href: "../agrocereals/spices",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "../apparels/lehenga",
+              },
+              {
+                linkName: "Saree",
+                href: "../apparels/saree",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
+      },
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      links: {
-        home: "/",
-        logo: "#",
-        sari: "../products/sari",
-        contactUs: "#contact",
-        juice: "#",
-        lehenga: "../products/lehenga",
-        oil: "../products/oil",
-        spices: "../products/spices",
+      cards: [],
+    },
+
+    {
+      name: "Pulses",
+      url: "pulses",
+      submenu: "Agrocereals",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "../agrocereals/oil",
+              },
+              {
+                linkName: "Organic Product",
+                href: "../agrocereals/organic-product",
+              },
+              {
+                linkName: "Pulses",
+                href: "#",
+              },
+              {
+                linkName: "Spices",
+                href: "../agrocereals/spices",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "../apparels/lehenga",
+              },
+              {
+                linkName: "Saree",
+                href: "../apparels/saree",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
       },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       cards: [],
     },
     {
       name: "Spices",
-      submenu: "Spices",
+      url: "spices",
+      submenu: "Agrocereals",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "../agrocereals/oil",
+              },
+              {
+                linkName: "Organic Product",
+                href: "../agrocereals/organic-product",
+              },
+              {
+                linkName: "Pulses",
+                href: "../agrocereals/pulses",
+              },
+              {
+                linkName: "Spices",
+                href: "#",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "../apparels/lehenga",
+              },
+              {
+                linkName: "Saree",
+                href: "../apparels/saree",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
+      },
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      links: {
-        home: "/",
-        logo: "#",
-        sari: "../products/sari",
-        contactUs: "#contact",
-        juice: "../products/juice",
-        lehenga: "../products/lehenga",
-        oil: "../products/oil",
-        spices: "#",
+      cards: [],
+    },
+
+    {
+      name: "Lehenga",
+      url: "lehenga",
+      submenu: "Apparels",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "../agrocereals/oil",
+              },
+              {
+                linkName: "Organic Product",
+                href: "../agrocereals/organic-product",
+              },
+              {
+                linkName: "Pulses",
+                href: "../agrocereals/pulses",
+              },
+              {
+                linkName: "Spices",
+                href: "../agrocereals/spices",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "#",
+              },
+              {
+                linkName: "Saree",
+                href: "../apparels/saree",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
       },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      cards: [],
+    },
+    {
+      name: "Saree",
+      url: "saree",
+      submenu: "Apparels",
+      nav: {
+        logoHref: "/",
+        sections: [
+          { sectionName: "Home", href: "/", state: false },
+          {
+            sectionName: "Agrocereals",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Oil",
+                href: "../agrocereals/oil",
+              },
+              {
+                linkName: "Organic Product",
+                href: "../agrocereals/organic-product",
+              },
+              {
+                linkName: "Pulses",
+                href: "../agrocereals/pulses",
+              },
+              {
+                linkName: "Spices",
+                href: "../agrocereals/spices",
+              },
+            ],
+          },
+          {
+            sectionName: "Apparels",
+            href: "",
+            state: false,
+            links: [
+              {
+                linkName: "Lehenga",
+                href: "../apparels/lehenga",
+              },
+              {
+                linkName: "Saree",
+                href: "#",
+              },
+            ],
+          },
+          {
+            sectionName: "Contact Us",
+            href: "#contact",
+            state: false,
+          },
+        ],
+      },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       cards: [],
     },
   ],
-};
-
-const homePageData: homePageDataType = {
-  links: {
-    contactUs: "#contact",
-    home: "#",
-    juice: "/products/juice",
-    lehenga: "/products/lehenga",
-    logo: "#",
-    oil: "/products/oil",
-    sari: "/products/sari",
-    spices: "/products/spices",
-  },
 };
 
 export { productsPagesData, homePageData };

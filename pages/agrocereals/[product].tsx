@@ -8,8 +8,8 @@ import TopBar from "../../components/Topbar/TopBar";
 import { productsPagesData } from "../../data/data";
 import { productPageDataType } from "../../data/dataInterface";
 
-const Product = (props: { data: productPageDataType }): JSX.Element => {
-  const { name, links } = props.data;
+const Apparels = (props: { data: productPageDataType }): JSX.Element => {
+  const { name, nav } = props.data;
 
   return (
     <>
@@ -21,10 +21,10 @@ const Product = (props: { data: productPageDataType }): JSX.Element => {
         <title>Saching Trading - {name}</title>
       </Head>
       <div className="flex">
-        <SideBar links={links} />
+        <SideBar nav={nav} />
         {/*Content starts here */}
         <div className="flex flex-1 min-h-full flex-col">
-          <TopBar links={links} />
+          <TopBar nav={nav} />
           <ProductsSection pageData={props.data} />
           <Footer />
           <Telegram imagePath="../img/telegram.png" />
@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   let pageData;
 
   productsPagesData.pages.forEach((page) => {
-    if (page.name.toLowerCase() === url) {
+    if (page.url.toLowerCase() === url) {
       pageData = page;
     }
   });
@@ -53,10 +53,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { product: "sari" } }, // See the "paths" section below
-      { params: { product: "lehenga" } }, // See the "paths" section below
       { params: { product: "oil" } }, // See the "paths" section below
-      { params: { product: "juice" } }, // See the "paths" section below
+      { params: { product: "organic-product" } }, // See the "paths" section below
+      { params: { product: "pulses" } }, // See the "paths" section below
       { params: { product: "spices" } }, // See the "paths" section below
     ],
 
@@ -64,4 +63,4 @@ export async function getStaticPaths() {
   };
 }
 
-export default Product;
+export default Apparels;
