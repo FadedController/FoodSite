@@ -65,6 +65,7 @@ html {
 
 .typewriter {
   position: relative;
+  z-index: 50;
   top: 50%;
   width: auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -78,7 +79,7 @@ html {
 /*The scrollbar*/
 
 ::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {

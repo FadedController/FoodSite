@@ -4,6 +4,7 @@ import TopBar from "../components/Topbar/TopBar";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
 import Telegram from "../components/Contact/Telegram";
+import BackToTop from "../components/Footer/BackToTop";
 import { homePageData } from "../data/data";
 import { homePageDataType } from "../data/dataInterface";
 import { GetStaticProps } from "next";
@@ -23,10 +24,11 @@ const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
       <div className="flex">
         <SideBar nav={nav} />
         {/*Content goes here*/}
-        <div className="flex flex-1 min-h-full flex-col">
+        <div className="flex flex-1 flex-col">
           <TopBar nav={nav} />
           <Main />
           <Footer />
+          <BackToTop />
           <Telegram imagePath="img/telegram.png" />
         </div>
         {/*Content ends here */}

@@ -7,16 +7,16 @@ const Hero = (): JSX.Element => {
         </h1>
         <div className="flex justify-center space-x-8 opacity-90">
           <a
-            href="#"
+            href="#cards"
             className="text-black text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md"
           >
-            Click Me
+            Learn More
           </a>
           <a
-            href="#"
+            href="#contact"
             className="text-gray-50 text-xl font-semibold shadow-lg bg-blue-900 hover:bg-blue-800 px-4 py-2 rounded-md"
           >
-            Click Me
+            Contact Us
           </a>
         </div>
       </div>

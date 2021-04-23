@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import ProductsSection from "../../components/Products/ProductsSection";
 import SideBar from "../../components/Sidebar/SideBar";
 import TopBar from "../../components/Topbar/TopBar";
+import BackToTop from "../../components/Footer/BackToTop";
 import { productsPagesData } from "../../data/data";
 import { productPageDataType } from "../../data/dataInterface";
 
@@ -23,10 +24,11 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
       <div className="flex">
         <SideBar nav={nav} />
         {/*Content starts here */}
-        <div className="flex flex-1 min-h-full flex-col">
+        <div className="flex flex-1 flex-col">
           <TopBar nav={nav} />
           <ProductsSection pageData={props.data} />
           <Footer />
+          <BackToTop />
           <Telegram imagePath="../img/telegram.png" />
         </div>
         {/*Content ends here */}
@@ -42,10 +44,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   productsPagesData.pages.forEach((page) => {
     if (page.url.toLowerCase() === url) {
       pageData = page;
-    } 
+    }
   });
-
-
 
   return {
     props: { data: pageData },

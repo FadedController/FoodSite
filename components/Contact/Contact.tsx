@@ -1,18 +1,15 @@
 import { useForm } from "@formspree/react";
-import { useState } from "react";
+import { useContext } from "react";
+import ContactContext from "./ContactContext";
 import Dialogs from "./Dialogs";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("contact");
-  const [form, setForm] = useState({
-    name: "",
-    phoneNumber: "",
-    message: "",
-    email: "",
-  });
+  const [state, handleSubmit] = useForm("contact"); // formspree api
+  const [form, setForm] = useContext(ContactContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(form);
     //handleSubmit(form); // wait til prod
     setForm({
       name: "",
@@ -46,7 +43,7 @@ const ContactForm = () => {
           services.
         </p>
         <div className="flex flex-1 flex-col justify-center space-y-2">
-          <h3 className="text-xl font-semibold ml-1">Name</h3>
+          <h3 className="text-xl font-semibold ml-1">Name*</h3>
           <input
             className="shadow-inner px-5 bg-gray-50 rounded-2xl h-12"
             name="name"
@@ -59,7 +56,7 @@ const ContactForm = () => {
         </div>
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 md:space-y-0 space-y-5">
           <div className="flex flex-col flex-1 space-y-2">
-            <h3 className="text-xl font-semibold ml-1">Email</h3>
+            <h3 className="text-xl font-semibold ml-1">Email*</h3>
             <input
               name="email"
               id="email"
@@ -85,7 +82,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="flex space-y-2 flex-col">
-          <h3 className="text-xl font-semibold ml-1">Message</h3>
+          <h3 className="text-xl font-semibold ml-1">Message*</h3>
           <textarea
             name="message"
             id="message"

@@ -7,6 +7,8 @@ import SideBar from "../../components/Sidebar/SideBar";
 import TopBar from "../../components/Topbar/TopBar";
 import { productsPagesData } from "../../data/data";
 import { productPageDataType } from "../../data/dataInterface";
+import BackToTop from "../../components/Footer/BackToTop";
+
 
 const Apparels = (props: { data: productPageDataType }): JSX.Element => {
   const { name, nav } = props.data;
@@ -23,10 +25,11 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
       <div className="flex">
         <SideBar nav={nav} />
         {/*Content starts here */}
-        <div className="flex flex-1 min-h-full flex-col">
+        <div className="flex flex-1 flex-col">
           <TopBar nav={nav} />
           <ProductsSection pageData={props.data} />
           <Footer />
+          <BackToTop />
           <Telegram imagePath="../img/telegram.png" />
         </div>
         {/*Content ends here */}

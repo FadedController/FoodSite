@@ -32,3 +32,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Page Size First Load JS
+┌ ● / 1.66 kB 77.4 kB
+├ /\_app 0 B 70 kB
+├ ○ /404 466 B 70.4 kB
+├ ● /agrocereals/[product] 971 B 76.8 kB
+├ ├ /agrocereals/oil
+├ ├ /agrocereals/organic-product
+├ ├ /agrocereals/pulses
+├ └ /agrocereals/spices
+└ ● /apparels/[product] 967 B 76.8 kB
+├ /apparels/saree
+└ /apparels/lehenga

@@ -41,7 +41,7 @@ const Navigation = (props: { nav: Nav }): JSX.Element => {
               >
                 <a
                   href={section.href ? section.href : null}
-                  className="transition hover:text-blue-800 mx-8 flex-1"
+                  className="transition hover:text-blue-800 mx-8 w-full"
                 >
                   {section.sectionName}
                 </a>
@@ -63,11 +63,13 @@ const Navigation = (props: { nav: Nav }): JSX.Element => {
                         navState[section.sectionName]
                           ? "visible opacity-100"
                           : "invisible opacity-0"
-                      } absolute transition -right min-w-menu bg-gray-100 font-normal text-lg divide-y divide-gray-500 py-2 px-5 rounded-sm shadow-md`}
+                      } absolute transition -right min-w-menu bg-gray-100 font-normal text-lg divide-y divide-gray-500 py-2 px-5 rounded-sm shadow-md flex flex-col`}
                     >
                       {section.links.map((link) => (
-                        <li className="py-2" key={link.linkName}>
-                          <a href={link.href}>{link.linkName}</a>
+                        <li className="py-2 flex" key={link.linkName}>
+                          <a href={link.href} className="flex-1">
+                            {link.linkName}
+                          </a>
                         </li>
                       ))}
                     </ul>

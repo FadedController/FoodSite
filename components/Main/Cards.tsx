@@ -1,6 +1,9 @@
 const Cards = (): JSX.Element => {
   return (
-    <div className="cards-bg pt-20 md:pt-24 flex flex-col w-full items-center justify-center shadow-inner">
+    <div
+      className="cards-bg pt-20 md:pt-24 flex flex-col w-full items-center justify-center shadow-inner"
+      id="cards"
+    >
       <div className="max-w-4xl bg-gray-50 md:px-16 md:py-10 md:mx-12 px-3 py-8 md:rounded-md shadow-inner items-center space-y-8">
         <h1 className="mx-2 flex font-semibold text-blue-900 text-4xl">
           Lorem Ipsum, Dolor Sit
