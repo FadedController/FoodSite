@@ -1,47 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Next.js Static generation
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-Page Size First Load JS
-┌ ● / 1.66 kB 77.4 kB
-├ /\_app 0 B 70 kB
-├ ○ /404 466 B 70.4 kB
-├ ● /agrocereals/[product] 971 B 76.8 kB
-├ ├ /agrocereals/oil
-├ ├ /agrocereals/organic-product
-├ ├ /agrocereals/pulses
-├ └ /agrocereals/spices
-└ ● /apparels/[product] 967 B 76.8 kB
-├ /apparels/saree
+Page  
+┌ ● /  
+├ /\_app  
+├ ○ /404  
+├ ● /agro/[product]  
+├ ├ /agro/oil
+├ ├ /agro/organic-product
+├ ├ /agro/pulses
+├ └ [+2 more paths]
+└ ● /apparels/[product]  
+ ├ /apparels/saree
 └ /apparels/lehenga
+
+- First Load JS shared by all  
+  ├ chunks/03be3a6357e6f87c51fa97f920079f962e4645c8.6c49b7.js  
+  ├ chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.92a4b8.js  
+  ├ chunks/framework.e3de07.js  
+  ├ chunks/main.6628c3.js  
+  ├ chunks/pages/\_app.623072.js  
+  ├ chunks/webpack.50bee0.js  
+  └ css/178cfb57ae54232c394c.css
+
+λ (Server) server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○ (Static) automatically rendered as static HTML (uses no initial props)
+● (SSG) automatically generated as static HTML + JSON (uses getStaticProps)
+(ISR) incremental static regeneration (uses revalidate in getStaticProps)

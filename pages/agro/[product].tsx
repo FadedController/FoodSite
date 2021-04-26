@@ -9,7 +9,6 @@ import { productsPagesData } from "../../data/data";
 import { productPageDataType } from "../../data/dataInterface";
 import BackToTop from "../../components/Footer/BackToTop";
 
-
 const Apparels = (props: { data: productPageDataType }): JSX.Element => {
   const { name, nav } = props.data;
 
@@ -56,10 +55,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { product: "oil" } }, // See the "paths" section below
-      { params: { product: "organic-product" } }, // See the "paths" section below
+      { params: { product: "oils" } }, // See the "paths" section below
+      { params: { product: "organic-products" } }, // See the "paths" section below
       { params: { product: "pulses" } }, // See the "paths" section below
       { params: { product: "spices" } }, // See the "paths" section below
+      { params: { product: "cereals" } }, // See the "paths" section below
     ],
 
     fallback: false, // See the "fallback" section below

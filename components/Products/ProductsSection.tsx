@@ -31,7 +31,7 @@ const ProductsSection = (props: {
                 key={card.title}
                 className="flex flex-col bg-gray-50 rounded-xl shadow-xl lg:max-w-sm space-y-5"
               >
-                <img src={card.image} className="rounded-t-xl" />
+                <img src={card.image} className="rounded-t-xl lg:h-72" />
                 <h1 className="text-2xl font-semibold text-blue-900 mx-5">
                   {card.title}
                 </h1>

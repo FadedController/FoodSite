@@ -1,21 +1,23 @@
 const Cards = (): JSX.Element => {
   return (
     <div
-      className="cards-bg pt-20 md:pt-24 flex flex-col w-full items-center justify-center shadow-inner"
+      className="cards-bg py-20 md:pt-24 flex flex-col w-full items-center justify-center shadow-inner"
       id="cards"
     >
       <div className="max-w-4xl bg-gray-50 md:px-16 md:py-10 md:mx-12 px-3 py-8 md:rounded-md shadow-inner items-center space-y-8">
         <h1 className="mx-2 flex font-semibold text-blue-900 text-4xl">
-          Lorem Ipsum, Dolor Sit
+          Our Goals
         </h1>
         <p className="mx-2 font-semibold">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-          consequuntur, aspernatur voluptas quasi error nulla ad ex dolorem
-          earum dicta vel provident illo odio quam, obcaecati doloribus odit!
-          Qui, quasi.
+          Our goal is to export best quality products to our clients with
+          quality assurance, great packaging at exceptionally competitive prices
+          and deliver it on time. We want to make sure that we deliver the
+          products which matches the clients exact requirements. We want to
+          build the trust with our clients over the period of time by making
+          sure we deliver what we promise.
         </p>
       </div>
-      <div className="flex lg:flex-row flex-col lg:space-x-4 mb-10 w-full">
+      {/* <div className="flex lg:flex-row flex-col lg:space-x-4 mb-10 w-full">
         <div className=" mt-8 lg:flex-1 flex lg:justify-end justify-center">
           <div className="flex flex-col max-w-md rounded-lg space-y-4 bg-gray-50 shadow-lg m-6">
             <img
@@ -56,7 +58,7 @@ const Cards = (): JSX.Element => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
