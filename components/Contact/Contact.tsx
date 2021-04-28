@@ -4,7 +4,7 @@ import ContactContext from "./ContactContext";
 import Dialogs from "./Dialogs";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("contact"); // formspree api
+  const [state, handleSubmit] = useForm("contact"); // formspree api form id
   const [form, setForm] = useContext(ContactContext);
 
   const onSubmit = (e) => {

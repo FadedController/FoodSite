@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }) => {
   });
 
   return (
-    <FormspreeProvider project="1659318231778721077">
+    <FormspreeProvider project="your-formspree-project">
       <ContactContext.Provider value={contactForm}>
         <Component {...pageProps} />
       </ContactContext.Provider>
