@@ -14,7 +14,7 @@ Once you have done that, go into the created directory and do the following:
 
 - You are going to need yarn for this, so if you do not have yarn install run this from your command line `$ npm install --global yarn`
 - After that, run `$ yarn install`. This will install all of the project's dependencies. This step may take a while, but you only have to do it once
-- At this point, the project should be working on your machine. Run `$ yarn dev` and go to [localhost:3000](localhost:3000) and you should see the site. If you edit anything the site will react to it and reload. This is how you would make changes to the site
+- At this point, the project should be working on your machine. Run `$ yarn dev` and go to [localhost:3000](http://localhost:3000) and you should see the site. If you edit anything the site will react to it and reload. This is how you would make changes to the site
 
 If you to got that working, you can now edit the site's code without problems
 
@@ -28,7 +28,7 @@ For deployment, you need to run the following commands
  $ yarn export
 ```
 
-This will create a /out folder, that you can then deploy to your favourite CDN (Content Delivery Network) such as Netlify
+This will create a optimized /out folder, that you can then deploy to your favourite CDN (Content Delivery Network) such as Netlify. If you want to test the exported site before deploying, you can do so with `$ yarn start` and going to [localhost:3000](http://localhost:3000)
 
 # Directories
 
