@@ -27,7 +27,13 @@ const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
         <div className="flex flex-1 flex-col">
           <TopBar nav={nav} />
           <Main />
-          <Footer />
+          <Footer
+            links={{
+              facebook: "#",
+              linkedin:
+                "https://www.linkedin.com/company/sachin-global-traders/",
+            }}
+          />
           <BackToTop />
           <Telegram imagePath="img/telegram.png" />
         </div>

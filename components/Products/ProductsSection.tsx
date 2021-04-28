@@ -17,11 +17,13 @@ const ProductsSection = (props: {
             {name} | <span className="text-yellow-500">{submenu}</span>{" "}
           </h1>
         </div>
-        <div className="flex font-semibold justify-center">
-          <p className="max-w-4xl text-center text-blue-900 mb-20 mx-5">
-            {description}
-          </p>
-        </div>
+        {description && (
+          <div className="flex font-semibold justify-center">
+            <p className="max-w-4xl text-center text-blue-900 mb-20 mx-5">
+              {description}
+            </p>
+          </div>
+        )}
       </div>
       <div className="flex w-full justify-center items-center bg-gray-200 shadow-inner py-6">
         <div className="m-5 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-8 gap-x-4 gap-y-8">
@@ -35,7 +37,9 @@ const ProductsSection = (props: {
                 <h1 className="text-2xl font-semibold text-blue-900 mx-5">
                   {card.title}
                 </h1>
-                <p className="font-semibold mx-5 pb-3">{card.description}</p>
+                {card.description && (
+                  <p className="font-semibold mx-5 pb-3">{card.description}</p>
+                )}
                 <div className="flex justify-center pb-8">
                   <a
                     href="#contact"

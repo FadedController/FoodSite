@@ -29,7 +29,7 @@ const NavContact = (): JSX.Element => {
           </li>
           <li>+91-9930249626</li>
           <li className="pb-4 pt-1 text-gray-500 text-sm underline">
-            enquiry@sachintradingcompany.com
+            enquire@sachinglobaltraders.com
           </li>
         </ul>
       </div>

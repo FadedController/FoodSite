@@ -27,7 +27,13 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
         <div className="flex flex-1 flex-col">
           <TopBar nav={nav} />
           <ProductsSection pageData={props.data} />
-          <Footer />
+          <Footer
+            links={{
+              linkedin:
+                "https://www.linkedin.com/company/sachin-global-traders/",
+              facebook: "#",
+            }}
+          />
           <BackToTop />
           <Telegram imagePath="../img/telegram.png" />
         </div>

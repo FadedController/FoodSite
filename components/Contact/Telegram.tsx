@@ -33,10 +33,6 @@ const Telegram = (props: { imagePath: string }): JSX.Element => {
                 className="h-14 rounded-full shadow-xl"
                 src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
               />
-              {/*               <img
-                className="h-14 rounded-full shadow-xl"
-                src="https://images.unsplash.com/photo-1571139317672-93369256842c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-              /> */}
             </div>
           </div>
           <p className="font-semibold flex justify-center pb-4 px-2">
@@ -56,20 +52,6 @@ const Telegram = (props: { imagePath: string }): JSX.Element => {
               </div>
             </div>
           </div>
-          {/* <div className="flex bg-gray-50 md:rounded-b-md px-4 py-5">
-            <img
-              className="h-14 rounded-full shadow-xl"
-              src="https://images.unsplash.com/photo-1571139317672-93369256842c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-            />
-
-            <div className="flex-1 flex flex-col justify-center pl-3">
-              <h4 className="font-semibold">Your Brand Agent</h4>
-              <div className="flex items-center">
-                Offline
-                <div className="ml-1 mt-1 h-2 w-2 bg-yellow-500 rounded-full"></div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </>

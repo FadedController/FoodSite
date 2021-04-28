@@ -8,7 +8,15 @@ import LehengaPage from "./pages/lehenga";
 import SareePage from "./pages/saree";
 import HomePage from "./pages";
 
+/**
+ * The homePage data, including the navigation on index
+ */
+
 const homePageData: homePageDataType = HomePage;
+
+/**
+ * The data of all of the product pages, including navigation, cards, etc
+ */
 
 const productsPagesData: { pages: productPageDataType[] } = {
   pages: [

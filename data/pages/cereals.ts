@@ -1,9 +1,11 @@
-const CerealsPage = {
+import { productPageDataType } from "../dataInterface";
+
+const CerealsPage: productPageDataType = {
   name: "Cereals",
   url: "cereals",
   submenu: "Agro",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "We export all major cereals including rice, wheat, daal[lentils], Millet, Barley etc.",
   nav: {
     logoHref: "/",
     sections: [
@@ -60,14 +62,12 @@ const CerealsPage = {
   cards: [
     {
       title: "Rice",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Ir 64, Basmati, kolam, Sona, black, samba rice, etc.",
       image: "../products/cereal_rice.jpg",
     },
     {
       title: "Wheat",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      description: "Californina Long Wheat, Red wheat, etc.",
       image: "../products/cereal_wheat.jpg",
     },
   ],

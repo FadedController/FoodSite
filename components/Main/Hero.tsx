@@ -3,7 +3,7 @@ const Hero = (): JSX.Element => {
     <div className="h-96 hero flex w-full items-center justify-center shadow-inner">
       <div className="fade-in flex flex-col space-y-12">
         <h1 className="hero-text uppercase flex items-center justify-center text-gray-50 text-6xl shadow-lg font-semibold rounded-xl p-5 mx-4">
-          Lorem Ipsum
+          SACHIN GLOBAL TRADERS
         </h1>
         <div className="flex justify-center space-x-8 opacity-90">
           {/* <a
@@ -14,7 +14,7 @@ const Hero = (): JSX.Element => {
           </a> */}
           <a
             href="#contact"
-            className="text-black text-xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-md"
+            className="text-black text-2xl font-semibold shadow-lg bg-yellow-400 hover:bg-yellow-300 px-6 py-4 rounded-md"
           >
             Contact Us
           </a>
