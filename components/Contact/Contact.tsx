@@ -9,8 +9,8 @@ const ContactForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
-    //handleSubmit(form); // wait til prod
+    //console.log(form);
+    handleSubmit(form); // wait til prod
     setForm({
       name: "",
       phoneNumber: "",

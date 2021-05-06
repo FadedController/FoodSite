@@ -39,18 +39,24 @@ const Telegram = (props: { imagePath: string }): JSX.Element => {
             If you need help, please click here to chat
           </p>
           <div className="flex cursor-pointer md:rounded-b-md bg-gray-50 hover:bg-gray-200 px-4 py-5">
-            <img
-              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-              className="h-14 rounded-full shadow-xl"
-            />
+            <a
+              href="https://web.telegram.org/#/im?p=u1764370344_10050655958888236292"
+              target="_blank"
+              className="flex"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                className="h-14 rounded-full shadow-xl"
+              />
 
-            <div className="flex-1 flex flex-col justify-center pl-3">
-              <h4 className="font-semibold">Your Brand Agent</h4>
-              <div className="flex items-center">
-                Online
-                <div className="ml-1 mt-1 h-2 w-2 bg-green-500 rounded-full"></div>
+              <div className="flex-1 flex flex-col justify-center pl-3">
+                <h4 className="font-semibold">Your Brand Agent</h4>
+                <div className="flex items-center">
+                  Online
+                  <div className="ml-1 mt-1 h-2 w-2 bg-green-500 rounded-full"></div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

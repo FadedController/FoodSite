@@ -27,7 +27,7 @@ const NavContact = (): JSX.Element => {
           <li className="char-w text-center">
             A-03, Vasant-Lila society, Mahajan Wadi, Mira-Gavthan, Thane-401107
           </li>
-          <li>+91-9930249626</li>
+          <li>+91-9930-37-5108</li>
           <li className="pb-4 pt-1 text-gray-500 text-sm underline">
             enquire@sachinglobaltraders.com
           </li>
