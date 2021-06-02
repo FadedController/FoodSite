@@ -19,7 +19,11 @@ const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
-        <title>Saching Trading - Home</title>
+        <meta
+          name="description"
+          content="Sachin Trading Company is a global exporter in apparel, Indian spices, Organic foods. We are flexible enough to meet the requirements of all around the globe including USA, EU, ASIA, Africa and Australia."
+        />
+        <title>Home - Sachin Global Traders</title>
       </Head>
       <div className="flex">
         <SideBar nav={nav} />

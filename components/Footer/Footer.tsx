@@ -7,8 +7,14 @@ const Footer = (props: {
   return (
     <div className="bg-blue-900 flex flex-col space-y-5 justify-center items-center h-28 mb-10 md:mb-0 opacity-90">
       <h1 className="text-gray-50 text-sm mx-4">
-        Copyright 2021 | All Rights Reserved to Your Brand | Made by Axel
-        Padilla
+        Copyright 2021 | All Rights Reserved to Sachin Global Traders |{" "}
+        <a
+          className="hover:underline"
+          href="https://github.com/FadedController/"
+          target="_blank"
+        >
+          Designed by Axel Padilla
+        </a>
       </h1>
       <div className="flex space-x-5">
         <a href={props.links.facebook} target="_blank">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Nav } from "../../data/dataInterface";
+import Logo from "../Sidebar/Logo";
 
 const TopBar = (props: { nav: Nav }): JSX.Element => {
   const [state, setState] = useState(false);
@@ -20,8 +21,7 @@ const TopBar = (props: { nav: Nav }): JSX.Element => {
         <div className="flex items-center">
           <div className="flex-1 flex flex-col font-bold text-3xl p-4">
             <a href={nav.logoHref}>
-              <h1 className="text-yellow-500">Your</h1>
-              <h1 className="text-blue-900">Brand</h1>
+              <Logo className="w-16" />
             </a>
           </div>
           <div

@@ -3,6 +3,7 @@ import "../styles/custom.css";
 import { FormspreeProvider } from "@formspree/react";
 import ContactContext from "../components/Contact/ContactContext";
 import { useState } from "react";
+import Head from "next/head";
 
 const App = ({ Component, pageProps }) => {
   const contactForm = useState({

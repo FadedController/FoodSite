@@ -19,7 +19,15 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
-        <title>Saching Trading - {name}</title>
+        <title>{name} - Sachin Global Traders</title>
+        <meta
+          name="description"
+          content={
+            props.data.description
+              ? props.data.description
+              : "Enter the page to learn more about our product: " + name
+          }
+        />
       </Head>
       <div className="flex">
         <SideBar nav={nav} />
