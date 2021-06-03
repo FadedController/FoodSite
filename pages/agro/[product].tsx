@@ -19,6 +19,11 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          rel="shortcut icon"
+          type="image/webp"
+          href="../../img/logo.webp"
+        />
         <meta
           name="description"
           content={

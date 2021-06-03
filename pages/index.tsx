@@ -19,6 +19,7 @@ const IndexPage = (props: { data: homePageDataType }): JSX.Element => {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" type="image/webp" href="img/logo.webp" />
         <meta
           name="description"
           content="Sachin Trading Company is a global exporter in apparel, Indian spices, Organic foods. We are flexible enough to meet the requirements of all around the globe including USA, EU, ASIA, Africa and Australia."

@@ -20,6 +20,11 @@ const Apparels = (props: { data: productPageDataType }): JSX.Element => {
           rel="stylesheet"
         />
         <title>{name} - Sachin Global Traders</title>
+        <link
+          rel="shortcut icon"
+          type="image/webp"
+          href="../../img/logo.webp"
+        />
         <meta
           name="description"
           content={
