@@ -1,7 +1,9 @@
-const OrganicProductsPage = {
-  name: "Organic Products",
-  url: "organic-products",
-  submenu: "Agro",
+import { productPageDataType } from "../dataInterface";
+
+const OleoresinPage: productPageDataType = {
+  name: "Oleoresin",
+  url: "oleoresin",
+  submenu: "Extracts",
   nav: {
     logoHref: "/",
     sections: [
@@ -21,7 +23,7 @@ const OrganicProductsPage = {
           },
           {
             linkName: "Organic Products",
-            href: "#",
+            href: "../agro/organic-products",
           },
           {
             linkName: "Pulses",
@@ -54,7 +56,7 @@ const OrganicProductsPage = {
         state: false,
         links: [
           { href: "../extracts/curcumin", linkName: "Curcumin" },
-          { href: "../extracts/oleoresin", linkName: "Oleoresin" },
+          { href: "#", linkName: "Oleoresin" },
         ],
       },
       {
@@ -64,15 +66,15 @@ const OrganicProductsPage = {
       },
     ],
   },
-  description:
-    "To make sure to deliver healthy products to our clients we export wide variety of organic products, free from Chemicals and Pesticides.",
+  description: "",
   cards: [
     {
-      title: "Natural Honey",
-      description: "Jamun honey, Ginger honey, Acacia honey, etc",
-      image: "../products/organic_products_natural_honey.jpg",
+      title: "Oleoresin",
+      description:
+        "We provide all types of oleoresins from black pepper , Cardmom, Capsicum etc.",
+      image: "../products/oleoresin.jpg",
     },
   ],
 };
 
-export default OrganicProductsPage;
+export default OleoresinPage;

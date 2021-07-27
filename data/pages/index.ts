@@ -46,6 +46,15 @@ const HomePage = {
         ],
       },
       {
+        sectionName: "Extracts",
+        href: "",
+        state: false,
+        links: [
+          { href: "/extracts/curcumin", linkName: "Curcumin" },
+          { href: "/extracts/oleoresin", linkName: "Oleoresin" },
+        ],
+      },
+      {
         sectionName: "Contact Us",
         href: "#contact",
         state: false,

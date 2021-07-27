@@ -1,7 +1,9 @@
-const OrganicProductsPage = {
-  name: "Organic Products",
-  url: "organic-products",
-  submenu: "Agro",
+import { productPageDataType } from "../dataInterface";
+
+const CurcuminPage: productPageDataType = {
+  name: "Curcumin",
+  url: "curcumin",
+  submenu: "Extracts",
   nav: {
     logoHref: "/",
     sections: [
@@ -21,7 +23,7 @@ const OrganicProductsPage = {
           },
           {
             linkName: "Organic Products",
-            href: "#",
+            href: "../agro/organic-products",
           },
           {
             linkName: "Pulses",
@@ -53,7 +55,7 @@ const OrganicProductsPage = {
         href: "",
         state: false,
         links: [
-          { href: "../extracts/curcumin", linkName: "Curcumin" },
+          { href: "#", linkName: "Curcumin" },
           { href: "../extracts/oleoresin", linkName: "Oleoresin" },
         ],
       },
@@ -64,15 +66,15 @@ const OrganicProductsPage = {
       },
     ],
   },
-  description:
-    "To make sure to deliver healthy products to our clients we export wide variety of organic products, free from Chemicals and Pesticides.",
+  description: "",
   cards: [
     {
-      title: "Natural Honey",
-      description: "Jamun honey, Ginger honey, Acacia honey, etc",
-      image: "../products/organic_products_natural_honey.jpg",
+      title: "Curcumin",
+      description:
+        "We provide best quality curcumin with 96% purity. This can be increased/decreased as per clients needs.",
+      image: "../products/curcumin.webp",
     },
   ],
 };
 
-export default OrganicProductsPage;
+export default CurcuminPage;

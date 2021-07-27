@@ -7,6 +7,8 @@ import SpicesPage from "./pages/spices";
 import LehengaPage from "./pages/lehenga";
 import SareePage from "./pages/saree";
 import HomePage from "./pages";
+import CurcuminPage from "./pages/curcumin";
+import OleoresinPage from "./pages/oleoresin";
 
 /**
  * The homePage data, including the navigation on index
@@ -27,6 +29,8 @@ const productsPagesData: { pages: productPageDataType[] } = {
     SpicesPage,
     LehengaPage,
     SareePage,
+    CurcuminPage,
+    OleoresinPage,
   ],
 };
 
